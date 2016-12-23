@@ -1,4 +1,4 @@
-CREATE DATABASE mirai;
+#CREATE DATABASE mirai;
 
 CREATE TABLE `history` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,

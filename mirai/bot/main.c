@@ -520,14 +520,14 @@ static BOOL unlock_tbl_if_nodebug(char *argv0)
     }
     fold %= (sizeof (obf_funcs) / sizeof (void *));
     
-#ifndef DEBUG
-    (obf_funcs[fold])();
-    matches = util_strcmp(argv0, buf_dst);
-    util_zero(buf_src, sizeof (buf_src));
-    util_zero(buf_dst, sizeof (buf_dst));
-    return matches;
-#else
+//#ifndef DEBUG
+//    (obf_funcs[fold])();
+//    matches = util_strcmp(argv0, buf_dst);
+//    util_zero(buf_src, sizeof (buf_src));
+//    util_zero(buf_dst, sizeof (buf_dst));
+//    return matches;
+//#else
     table_init();
     return TRUE;
-#endif
+//#endif
 }
