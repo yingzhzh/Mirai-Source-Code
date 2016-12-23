@@ -25,7 +25,7 @@ func (this *Admin) Handle() {
         this.conn.Write([]byte("\033[?1049l"))
     }()
 
-    headerb, err := "mirai botnet 僵尸网络"
+    headerb, err := ioutil.ReadFile("prompt.txt")
     if err != nil {
         return
     }
