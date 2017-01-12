@@ -22,6 +22,28 @@ echo "Creating folder /etc/xcompile"
 mkdir /etc/xcompile > /dev/null 2>&1
 
 cd ../cross-compile-bin
+
+echo "Download cross-compiler-armv4l.tar.bz2 ..."
+wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-armv4l.tar.bz2
+echo "Download cross-compiler-armv5l.tar.bz2 ..."
+wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-armv5l.tar.bz2
+echo "Download cross-compiler-armv6l.tar.bz2 ..."
+wget http://distro.ibiblio.org/slitaz/sources/packages/c/cross-compiler-armv6l.tar.bz2
+echo "Download cross-compiler-i586.tar.bz2 ..."
+wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-i586.tar.bz2
+echo "Download cross-compiler-m68k.tar.bz2 ..."
+wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-m68k.tar.bz2
+echo "Download cross-compiler-mips.tar.bz2 ..."
+wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-mips.tar.bz2
+echo "Download cross-compiler-mipsel.tar.bz2 ..."
+wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-mipsel.tar.bz2
+echo "Download cross-compiler-powerpc.tar.bz2 ..."
+wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-powerpc.tar.bz2
+echo "Download cross-compiler-sh4.tar.bz2 ..."
+wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-sh4.tar.bz2
+echo "Download cross-compiler-sparc.tar.bz2 ..."
+wget https://www.uclibc.org/downloads/binaries/0.9.30.1/cross-compiler-sparc.tar.bz2
+
 echo "Copy cross-compiler-armv4l.tar.bz2 to /etc/xcompile"
 cp cross-compiler-armv4l.tar.bz2 /etc/xcompile/cross-compiler-armv4l.tar.bz2
 echo "Copy cross-compiler-armv5l.tar.bz2 to /etc/xcompile"
